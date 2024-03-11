@@ -1,7 +1,7 @@
 import axios from "axios";
 
-const API_BASE_URL = "https://api.weatherbit.io/v2.0";
 const API_KEY = "8ff6b1c427824112b02b9f92f1485bbb";
+const API_BASE_URL = "https://api.weatherbit.io/v2.0";
 
 const axiosInstance = axios.create({
   baseURL: API_BASE_URL,
@@ -38,11 +38,13 @@ export const fetchWeatherData = async (city, country) => {
   try {
     const response = await axiosInstance.get(`/history/energy`, {
       params: {
-        city,
-        country
+        city: city,
+        country,
+        key: API_KEY,
+        start_date: "2024-03-11",
+        end_date: "2024-03-20"
       },
     });
-    console.log(response.data)
     return response.data;
   } catch (error) {
     return handleApiError(error);

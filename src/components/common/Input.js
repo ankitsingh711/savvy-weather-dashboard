@@ -2,16 +2,18 @@
 import React from "react";
 import TextField from "@material-ui/core/TextField";
 
-const Input = ({ placeholder, value, onChange, label, error }) => {
+const Input = ({ placeholder, value, onChange, label }) => {
   return (
-    <TextField
-      placeholder={placeholder}
-      value={value}
-      onChange={onChange}
-      required
+    <div style={{width:"300px", marginBottom: "10px"}}>
+      <TextField
+      id="outlined-basic"
       label={label}
-      // error={}
+      variant="outlined"
+      placeholder={placeholder}
+      onChange={onChange}
+      style={{width: "400px"}}
     />
+    </div>
   );
 };
 

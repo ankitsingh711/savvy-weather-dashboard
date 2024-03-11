@@ -4,7 +4,7 @@ import Button from '@material-ui/core/Button';
 
 const CustomButton = ({ children, ...rest }) => {
   return (
-    <Button variant="contained" color="primary" {...rest}>
+    <Button variant="contained" color="primary" {...rest} style={{marginLeft: "0px", width: "400px"}}>
       {children}
     </Button>
   );
