@@ -1,0 +1,17 @@
+.weather_dashboard_container{
+    width: 100%;
+}
+
+.dashboard_title {
+    width: 100%;
+    text-align: center;
+}
+
+.dashboard__input__container {
+    border: 4px solid white;
+    width: 400px;
+    margin-left: 550px;
+    text-align: center;
+    padding: 30px;
+    margin-top: 100px;
+}
