@@ -41,8 +41,8 @@ export const fetchWeatherData = async (city, country) => {
         city: city,
         country,
         key: API_KEY,
-        start_date: "2024-03-11",
-        end_date: "2024-03-20"
+        start_date: "2024-01-11",
+        end_date: "2024-01-18"
       },
     });
     return response.data;
