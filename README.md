@@ -1,70 +1,59 @@
-# Getting Started with Create React App
+### Weather Dashboard App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a React application designed to fulfill the requirements outlined in the coding challenge provided. It allows users to search for weather information by city and country names and displays detailed weather information on a separate page.
 
-## Available Scripts
+### Features
 
-In the project directory, you can run:
+Dashboard: Users can enter city and country names in the search bar and click the "Get Weather" button to retrieve weather information.
+Weather Details Page: After clicking the "Get Weather" button, users are redirected to a details page displaying weather details such as temperature, humidity, and wind speed.
+API Integration: The OpenWeatherMap API is used to fetch weather information based on user input.
+Material-UI: The UI is implemented using Material-UI components for a clean and responsive design.
+Component Structure: The functionality is divided into reusable components for the dashboard, weather details, and other relevant parts of the app.
 
-### `npm start`
+weather-dashboard-app/
+│
+├── public/
+│   └── index.html
+│
+├── src/
+│   ├── components/
+│   │   ├── Dashboard.js
+│   │   ├── WeatherDetails.js
+│   │   └── ...
+│   │
+│   ├── services/
+│   │   └── weatherService.js
+│   │
+│   ├── App.js
+│   ├── index.js
+│   └── ...
+|   |__ utils/
+|       |__ apiUtils.js
+|       |__ getPlaceImage.js
+|       |__ getDayFromDate.js
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+|   |__ common/
+|       |__ Input.js
+|       |__ Button.js
+|       |__ LoadinSpinner.js
+|   
+|   |__pages/
+|       |__ Dashboard/
+|           |__ index.js
+|            |__ index.test.js
+│
+├── .gitignore
+|__ errorBoundary.js
+├── package.json
+├── README.md
+└── ...
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Getting Started
 
-### `npm test`
+To run this project locally, follow these steps:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Clone this repository to your local machine.
+Install dependencies using npm install.
+Rename .env.example file to .env and replace [YOUR_API_KEY] with your OpenWeatherMap API key.
+Start the development server using npm start.
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
