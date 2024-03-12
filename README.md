@@ -1,5 +1,7 @@
 ### Weather Dashboard App
 
+Deployed on Vercel - https://savvy-weather-dashboard-71ovcz06h.vercel.app/ 
+
 This project is a React application designed to fulfill the requirements outlined in the coding challenge provided. It allows users to search for weather information by city and country names and displays detailed weather information on a separate page.
 
 ### Features
